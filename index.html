@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Imam & Aisyah</title>
+    <!-- Favicons -->
+  <link href="asset/icon.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="card invitation-card ">
+            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                <!-- New Section for Intro -->
+                <div id="intro-section" class="intro-section w-100 vh-100 bg-soft">
+                    <div class="intro-content text-center">
+                        <img src="asset/couple-image.jpg" alt="Couple" class="rounded-circle">
+                        <h2>Imam & Aisyah</h2>
+                        <p>Kepada Bapak/Ibu/Saudara/i</p>
+                        <button class="btn btn-outline-secondary" onclick="playAudio(); scrollToSection('bride-groom-section')">Buka Undangan</button>
+                    </div>
+                </div>
+
+                <!-- Bride and Groom Section -->
+                <div id="bride-groom-section" class="bride-groom-section w-100 vh-100" data-aos="fade-down" data-aos-duration="1500" >
+                    <h2 class="greeting">Assalamu'alaikum Wr. Wb.</h2>
+                    <p>Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
+                    <div class="bride-groom d-flex flex-column justify-content-center align-items-center">
+                        <div class="person mb-4" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                            <img src="asset/bride-image.jpg" alt="Bride" class="rounded-circle mb-2">
+                            <h3>Aisyah Andraresta</h3>
+                            <p>Putri Pertama Bapak Soleh Hadi & ibu Parsini</p>
+                        </div>
+                        <p class="and">&</p>
+                        <div class="person mt-4" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                            <img src="asset/groom-image.jpg" alt="Groom" class="rounded-circle mb-2">
+                            <h3>Imam Satria Ramadhan</h3>
+                            <p>Putra Pertama Bapak Fery Rajendra Kusdiyanto & Alm Ibu Suyati</p>
+                        </div>
+                        <div class="surat" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                            <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Save The Date Section -->
+                <div id="save-date-section" class="save-date-section w-100 vh-100">
+                    <h1 class="save-date" data-aos="zoom-in-up" data-aos-duration="1500">Save The Date</h1>
+                    <p class="invite-text" data-aos="zoom-in-up" data-aos-duration="1500">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah kami akan menyelenggarakan acara :</p>
+
+                    <h2 class="event-title" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="200">Akad Nikah</h2>
+                    <p class="event-month" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="200">September</p>
+                    <div class="event-date d-flex justify-content-center" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="date-column">
+                            <p class="day">Sabtu</p>
+                        </div>
+                        <div class="date-column date-number">
+                            <p>07</p>
+                        </div>
+                        <div class="date-column">
+                            <p class="day">2024</p>
+                        </div>
+                    </div>
+                    <div class="event-details" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="400">
+                        <p><i class="far fa-clock"></i> 09.30 - selesai WIB</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kediaman Mempelai Wanita</p>
+                        <p>Dusun Janti RT 03 RW 02, Kecamatan Mojoagung Jombang Jawa Timur</p>
+                        <p>
+                         Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do’a restu kepada kedua mempelai.
+                       </p> 
+                        <div id="countdown" class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 id="days">0</h3>
+                                            <p>Hari</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 id="hours">0</h3>
+                                            <p>Jam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 id="minutes">0</h3>
+                                            <p>Menit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 id="seconds">0</h3>
+                                            <p>Detik</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location Section -->
+<div id="location-section" class="location-section w-100 vh-100" data-aos="zoom-out-down" data-aos-duration="2000">
+    <h2 class="location-title">Lokasi Acara</h2>
+    <p class="location-text">Acara akan diselenggarakan di:</p>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1977.4892114385748!2d112.3300067412108!3d-7.577327185969331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1716472676970!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <a href="https://maps.app.goo.gl/gmb6VgDQTqt28fJk6" target="_blank" class="btn btn-cream btn-maps"><i class="fas fa-map-marker-alt"></i> Buka Google Maps</a>
+</div>
+
+    <audio id="myAudio">
+        <source src="bermuara.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    <script src="asset/main.js"></script>
+</body>
+</html>
