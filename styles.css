@@ -165,9 +165,13 @@ body {
     margin: 0;
 }
 
-.event-details p {
+.event-details  {
     font-size: 1rem;
-    margin-bottom: 5px;
+    margin-bottom: 20px; /* Anda bisa menyesuaikan nilai ini sesuai kebutuhan */
+}
+
+.event-doa {
+    margin-top: 20px; /* Anda juga bisa menggunakan margin-top jika lebih cocok */
 }
 
 .event-details p i {
