@@ -134,12 +134,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-.save-date {
-    font-size: 2.75rem;
-    margin-bottom: 10px;
-}
-
 .event-month {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -262,7 +256,7 @@ body {
     }
 
     .save-date {
-        font-size: 1.5rem; /* Kurangi ukuran font untuk ukuran layar kecil */
+        font-size: 2.5rem; /* Kurangi ukuran font untuk ukuran layar kecil */
     }
 
     .event-title {
