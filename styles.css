@@ -130,12 +130,18 @@ body {
 }
 
 .save-date-section .event-title {
-    font-size: 3rem;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+
+.save-date {
+    font-size: 2.75rem;
     margin-bottom: 10px;
 }
 
 .event-month {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
